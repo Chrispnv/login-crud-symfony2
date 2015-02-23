@@ -19,3 +19,6 @@ test
 <li>McHale</li>
 <li>Parish</li>
 </ol>
+
+<pre><code>Ceci est un bloc de code.
+</code></pre>
