@@ -1,0 +1,15 @@
+pnv_saisie:
+    resource: "@PnvSaisieBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation
+
+login:
+    pattern:   /login
+    defaults:  { _controller: PnvSaisieBundle:Security:login }
+
+login_check:
+    pattern:   /login_check

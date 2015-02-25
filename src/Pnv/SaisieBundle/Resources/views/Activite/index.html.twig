@@ -1,0 +1,42 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Activite list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Activité</th>
+                <th>Maitrise</th>
+                <th>Territoire bénef</th>
+                <th>Temps passé</th>
+                <th>Commentaire</th>
+            </tr>
+        </thead>
+        <tbody>
+		{# l'objet = entité activite est envoyée par l'action index du controller associé à la view = ActiviteController.php #}
+        {% for activite_record in activite %}
+            <tr>
+                <td>{{ activite_record.idAction }}</td>
+                <td>{{ activite_record.idMaitrise }}</td>
+                <td>{{ activite_record.idTerritoire }}</td>
+                <td>{{ activite_record.idDuree }}</td>
+                <td>{{ activite_record.commentaire }}</td>
+				<td><a href="{{ path('activite_show', { 'activiteId': activite_record.idActivite }) }}">Afficher</a><td>
+				<td><a href="{{ path('activite_edit', { 'activiteId': activite_record.idActivite }) }}">Editer</a></td>
+				<td><a href="{{ path('activite_delete', { 'activiteId': activite_record.idActivite }) }}">Supprimer</a></td>
+                
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+		{# sur le lien appel action associée à la route activite_add (= action add dans ActiviteController.php) #}
+            <a href="{{ path('activite_add') }}">
+                Ajouter une activité
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

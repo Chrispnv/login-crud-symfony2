@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: /home/pnv/suivi_activite_annotation/app/config/routing_dev.yml

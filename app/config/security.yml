@@ -1,0 +1,21 @@
+security:
+    firewalls:
+        secured_area:
+            pattern:    ^/
+            anonymous: ~
+            form_login:
+                login_path: /login
+                check_path: /login_check
+
+    access_control:
+        - { path: ^/activite, roles: ROLE_ADMIN }
+
+    providers:
+        in_memory:
+             memory:
+                users:
+                    chris:  { password: ryanpass, roles: 'ROLE_USER' }
+                    admin: { password: admin, roles: 'ROLE_ADMIN' }
+
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext

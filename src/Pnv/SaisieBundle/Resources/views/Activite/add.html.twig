@@ -1,0 +1,47 @@
+{# Ce template matérialisant un formulaire est utilisé aussi bien pour ajouter un nouvel objet en BDD que pour éditer des objets existants #}
+{% extends '::base.html.twig' %}
+{% block title %}{% if activite.idActivite %}{{ 'Edit activite' }}{% else %}{{ 'Add activite' }}{% endif %}{% endblock %}
+
+{% block body %}
+{# le form action lancer depuis le submit utilise la fonction path pour ernvoyer sur la bonne action du controller associé à la view #}
+<form action="{% if activite.idActivite %}{{ path('activite_edit', {'activiteId':activite.idActivite}) }}{% else %}{{ path('activite_add') }}{% endif %}" method="post" {{ form_enctype(form) }}>
+    <h1>{% if activite.idActivite %}{{ 'Edit activite' }}{% else %}{{ 'Add activite' }}{% endif %}</h1>
+    <div>
+    {{ form_errors(form.idAction) }}
+    {{ form_label(form.idAction) }}
+    {{ form_widget(form.idAction) }}
+    </div>
+	<div>
+    {{ form_errors(form.idMaitrise) }}
+    {{ form_label(form.idMaitrise) }}
+    {{ form_widget(form.idMaitrise) }}
+    </div>
+	<div>
+    {{ form_errors(form.idTerritoire) }}
+    {{ form_label(form.idTerritoire) }}
+    {{ form_widget(form.idTerritoire) }}
+    </div>
+	<div>
+    {{ form_errors(form.idCommune) }}
+    {{ form_label(form.idCommune) }}
+    {{ form_widget(form.idCommune) }}
+    </div>
+	<div>
+    {{ form_errors(form.idDuree) }}
+    {{ form_label(form.idDuree) }}
+    {{ form_widget(form.idDuree) }}
+    </div>
+    <div>
+    {{ form_errors(form.commentaire) }}
+    {{ form_label(form.commentaire) }}
+    {{ form_widget(form.commentaire) }}
+    </div>
+    
+    {{ form_rest(form) }}
+    <input type="submit" id="submit" value="{% if activite.idActivite %}{{ 'Update' }}{% else %}{{ 'Add' }}{% endif %}" name="submit" />
+</form>
+<tr><td>
+<a href="{{ path('activite_index') }}">Retour à la liste des activités</a>
+</tr></td>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+
+<h1>Affichage activité</h1>
+<tr><td>
+{# l'objet = entité activite est envoyée par l'action show du controller associé à la view = ActiviteController.php. Ensuite activite utilise les variables définies dans l'entité Activite Activite.php #}
+{{ activite.idAction }} # {{ activite.idMaitrise }} # {{ activite.idTerritoire }} # {{ activite.idDuree }} # {{ activite.commentaire }}
+</tr></td>
+<tr><td>
+{# sur le lien appel action associée à la route activite_index (= action index dans ActiviteController.php) #}
+<a href="{{ path('activite_index') }}">Retour à la liste des activités</a>
+</tr></td>
+{% endblock %}
