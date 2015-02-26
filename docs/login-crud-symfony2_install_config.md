@@ -20,14 +20,20 @@ Info :
 - Changer le propriétaire de ce nouveau répertoire. Mettre le user web comme nouveau propriétaire.
   - Pour trouver le user web.
 
-        ```$ ps aux | grep httpd ou ps aux | grep apache```
+        ```
+        $ ps aux | grep httpd ou ps aux | grep apache
+        ```
     
-```$ chown -R userweb:userweb repappli```
+```
+$ chown -R userweb:userweb repappli
+```
 
 - Rendre lisible l'appli sur internet : 2 solutions.
     - Soit créer un lien symbolique vers le répertoire web de l'appli à la racine web d'Apache.
     
-       ```$ ln -s /cheminrepappli/repappli/web /cheminracineweb/nomliensymbo``` 
+        ```
+        $ ln -s /cheminrepappli/repappli/web /cheminracineweb/nomliensymbo
+        ``` 
 
     - Soit ajouter le virtualHost de l'appli dans la conf Apache.
     
@@ -46,7 +52,9 @@ Info :
 
 - Changer les droits sur `cache` et `logs` de l'appli depuis `/home/repuser/repappli`
 
-```$ chmod -R 777 app/cache app/logs```
+```
+$ chmod -R 777 app/cache app/logs
+```
 
 - Configurer la BDD dans l'appli. Editer le fichier `/home/repuser/repappli/app/config/parameters.yml` et modifier les paramètres.
 
