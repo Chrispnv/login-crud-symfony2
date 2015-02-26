@@ -78,3 +78,11 @@ parameters:
 
 ![Texte alternatif](/docs/images/page_login_appli.jpg)
 
+*astérisques simples*
+
+_traits soulignés simples_
+
+**astérisques double**
+
+__traits soulignés doubles__
+
