@@ -1,5 +1,11 @@
-INSTALLATION
-------------
+INSTALLATION DE LA BDD
+----------------------
+
+- Créer une BDD dans votre environnement de BDD
+- Récupérer et exécuter le code SQL dans le fichier /sql/create_tables.sql qui est sur le dépôt
+
+INSTALLATION APPLI
+------------------
 
 Info : 
 * Cette doc est valable pour une installation et une configuration sur Linux (Ubuntu).
@@ -42,4 +48,4 @@ Info :
 
 - Changer les droits sur `cache` et `logs` de l'appli depuis `/home/repuser/repappli`
 
-    ```$ chmod -R 777 app/cache app/logs```
+```$ chmod -R 777 app/cache app/logs```
