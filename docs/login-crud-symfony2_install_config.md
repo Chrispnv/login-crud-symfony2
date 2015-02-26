@@ -76,8 +76,6 @@ parameters:
 
 - Tester l'adresse `http://ipserveurweb/nomappli/app-dev.php/activite`, vous devez voir ça !!
 
-![Texte alternatif](/docs/images/page_login_appli.jpg)
-
     ```
     Login = admin
     Mot de passe = admin
