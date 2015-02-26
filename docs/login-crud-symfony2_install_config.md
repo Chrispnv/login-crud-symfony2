@@ -7,4 +7,5 @@ Info : Cette doc est valable pour une installation et une configuration sur Linu
 
 - Changer le propriétaire de ce nouveau répertoire. Mettre le user web comme nouveau propriétaire
   - Pour trouver le user web
+
 '''ps aux | grep httpd ou ps aux | grep apache'''
