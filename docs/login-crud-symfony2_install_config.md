@@ -78,6 +78,8 @@ parameters:
 
 <img src="/docs/images/page_login_appli.jpg" alt="Page login">
 
+---------------------------------
+
     ```
     Login  admin
     Mot de passe  admin
