@@ -19,3 +19,25 @@ Info :
         ```$ ps aux | grep httpd ou ps aux | grep apache```
     
 ```$ chown -R userweb:userweb repappli```
+
+- Rendre lisible l'appli sur internet : 2 solutions
+    - Soit créer un lien symbolique vers le répertoire web de l'appli à la racine web d'Apache
+    
+       ```$ ln -s /cheminrepappli/repappli/web /cheminracineweb/nomliensymbo``` 
+
+    - Soit ajouter le virtualHost de l'appli dans la conf Apache
+    
+        ```
+        <VirtualHost *:80>
+            ServerName dev.watchmydesk.com
+            DocumentRoot /home/djo/public/wmd/web
+            <Directory "/home/djo/public/wmd/web">
+                DirectoryIndex app.php
+                Options -Indexes FollowSymLinks SymLinksifOwnerMatch
+                AllowOverride All
+                Allow from All
+            </Directory>
+        </VirtualHost>
+        ```
+
+
