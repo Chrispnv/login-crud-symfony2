@@ -11,7 +11,7 @@ Info :
     $ exit
     ```
     
-- Récupérer avec Git ou d'une autre façon le dépôt de l'application dans un répertoire prélablement créé (mkdir ...).  Pour mon cas, ce répertoire contenant l'appli se trouve dans le répertoire du user linux courant (/home/[rep user]).
+- Récupérer avec Git ou d'une autre façon le dépôt de l'application dans un répertoire prélablement créé (mkdir ...).  Pour mon cas, ce répertoire contenant l'appli se trouve dans le répertoire du user linux courant `(/home/repuser)`.
 
 - Changer le propriétaire de ce nouveau répertoire. Mettre le user web comme nouveau propriétaire
   - Pour trouver le user web
@@ -40,4 +40,6 @@ Info :
         </VirtualHost>
         ```
 
-- Changer droits sur `cache` et `logs` de l'appli
+- Changer les droits sur `cache` et `logs` de l'appli depuis `/home/repuser/repappli`
+
+    ```$ chmod -R 777 app/cache app/logs```
