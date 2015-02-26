@@ -29,9 +29,9 @@ Info :
     
         ```
         <VirtualHost *:80>
-            ServerName dev.watchmydesk.com
-            DocumentRoot /home/djo/public/wmd/web
-            <Directory "/home/djo/public/wmd/web">
+            ServerName nomappli.com
+            DocumentRoot /cheminrepappli/repappli/web
+            <Directory "/cheminrepappli/repappli/web">
                 DirectoryIndex app.php
                 Options -Indexes FollowSymLinks SymLinksifOwnerMatch
                 AllowOverride All
@@ -40,4 +40,4 @@ Info :
         </VirtualHost>
         ```
 
-
+- Changer droits sur `cache` et `logs` de l'appli
