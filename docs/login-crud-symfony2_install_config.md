@@ -14,6 +14,11 @@ Info :
 end tell
 </code></pre>
 
+```
+cd path/to/geo
+npm install grunt
+```
+
 - Récupérer avec Git ou d'une autre façon le dépôt de l'application dans un répertoire prélablement créé (mkdir ...).  Pour mon cas, ce répertoire contenant l'appli se trouve dans le répertoire du user linux courant (/home/[rep user]).
 
 - Changer le propriétaire de ce nouveau répertoire. Mettre le user web comme nouveau propriétaire
