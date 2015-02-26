@@ -78,11 +78,11 @@ parameters:
 
 ![Texte alternatif](/docs/images/page_login_appli.jpg)
 
-*astérisques simples*
-
-_traits soulignés simples_
-
-**astérisques double**
-
-__traits soulignés doubles__
+       ```
+       Login = admin / Mot de passe = admin
+       ```
+       
+    Le logout n'a pas été mis en place.
+    
+Voilà. Bon test.
 
