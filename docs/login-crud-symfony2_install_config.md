@@ -20,9 +20,9 @@ Info :
 - Changer le propriétaire de ce nouveau répertoire. Mettre le user web comme nouveau propriétaire.
   - Pour trouver le user web.
 
-        ```
-        $ ps aux | grep httpd ou ps aux | grep apache
-        ```
+    ```
+    $ ps aux | grep httpd ou ps aux | grep apache
+    ```
     
 ```
 $ chown -R userweb:userweb repappli
@@ -75,5 +75,4 @@ parameters:
 ```
 
 - Tester l'adresse `http://ipserveurweb/nomappli/app-dev.php/activite`, vous devez voir ça !!
-- 
 
