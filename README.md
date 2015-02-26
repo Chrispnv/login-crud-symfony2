@@ -1,5 +1,5 @@
 Application login-crud-symfony2
-===============================
+-------------------------------
 
 Cette application est un petit exemple pour comprendre la logique de Symfony2.
 Elle a été développée avec Symfony 2.6.4.
