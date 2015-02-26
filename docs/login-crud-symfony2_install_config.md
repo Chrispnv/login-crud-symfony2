@@ -74,13 +74,11 @@ parameters:
     secret: 5a1c9e6070c7a76af25a9e6ec63a1fbea74b7382
 ```
 
-- Tester l'adresse `http://ipserveurweb/nomappli/app-dev.php/activite`, vous devez voir ça !!
-
-
+- Tester l'adresse `http://ipserveurweb/nomappli/app-dev.php/activite`, vous devez voir un champ Login, un champ Mot de passe et un bouton Login.
 
     ```
-    Login  admin
-    Mot de passe  admin
+    Login = admin
+    Mot de passe = admin
     ```
 
     Le logout n'a pas été mis en place.
