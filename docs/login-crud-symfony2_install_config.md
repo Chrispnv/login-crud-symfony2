@@ -1,11 +1,9 @@
-INSTALLATION DE LA BDD
-----------------------
+## INSTALLATION DE LA BDD
 
 - Créer une BDD dans votre environnement de BDD. Si le propriétaire est autre que postgres, l'utiliser dans la config de l'appli par la suite.
 - Récupérer et exécuter le code SQL dans le fichier /sql/create_tables.sql qui est sur le dépôt.
 
-INSTALLATION APPLI
-------------------
+## INSTALLATION APPLI
 
 Info : 
 * Cette doc est valable pour une installation et une configuration sur Linux (Ubuntu).
@@ -54,7 +52,7 @@ Info :
 
 ```
 parameters:
-    database_driver: pdo_pgsql
+    database_driver: pdo_pgsql (pour d'autres systèmes voir doc Symfony)
     database_host: IP serveur BDD
     database_port: port (par défaut 5432)
     database_name: nombdd
@@ -67,4 +65,7 @@ parameters:
     locale: en
     secret: 5a1c9e6070c7a76af25a9e6ec63a1fbea74b7382
 ```
+
+- Tester l'adresse `http://ipserveurweb/nomappli/app-dev.php/activite`, vous devez voir ça !!
+- 
 
