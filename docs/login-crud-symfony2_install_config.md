@@ -4,10 +4,12 @@ INSTALLATION
 Info : 
 * Cette doc est valable pour une installation et une configuration sur Linux (Ubuntu).
 * Les commandes Linux suivantes demandent pour certaines d'être lancées avec sudo. Il faut au préalable que le user linux qui lance les commandes ait les droits ```sudo```
-  
-  <pre><code>su -
-  adduser usercourant sudo
-  exit</code></pre>
+
+```
+su -
+adduser usercourant sudo
+exit
+```
     
 <pre><code>tell application "Foo"
     beep
