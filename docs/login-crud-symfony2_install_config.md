@@ -77,12 +77,12 @@ parameters:
 - Tester l'adresse `http://ipserveurweb/nomappli/app-dev.php/activite`, vous devez voir ça !!
 
 
-```
-Login = admin
-Mot de passe = admin
-```
+    ```
+    Login = admin
+    Mot de passe = admin
+    ```
 
-Le logout n'a pas été mis en place.
+    Le logout n'a pas été mis en place.
     
 Pour comprendre comment l'application fonctionne suivre la doc 'login-crud-symfony2_explication_appli.md'
 
