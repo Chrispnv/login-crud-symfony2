@@ -82,6 +82,7 @@ Login = admin
 Mot de passe = admin
 ```
 
+Le logout n'a pas été mis en place.
     
 Pour comprendre comment l'application fonctionne suivre la doc 'login-crud-symfony2_explication_appli.md'
 
