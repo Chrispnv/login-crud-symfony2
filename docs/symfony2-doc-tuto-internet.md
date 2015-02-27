@@ -1,6 +1,6 @@
 ### Liens sur Symfony2
 
-+Généralités
++ Généralités
 - [Symfony2 - Site](http://symfony.com/)
 - [Symfony2 - Book](http://symfony.com/doc/current/book/index.html)
 - [Symfony2 - Cookbook](http://symfony.com/doc/current/cookbook/index.html)
@@ -14,7 +14,7 @@
 
 **Fonctionnalités**
 
-**Formulaires**
+    + **Formulaires**
 - [Symfony2 - Les formulaires & types de champs](http://symfony.com/fr/doc/current/book/forms.html)
 - [La ferme du web - Les formulaires & types de champs](http://www.lafermeduweb.net/tutorial/les-formulaires-dans-symfony2-p100.html)
 - [AFSY - Les formulaires & data binding](http://afsy.fr/avent/2013/22-formulaires-Symfony2-et-data-binding)
