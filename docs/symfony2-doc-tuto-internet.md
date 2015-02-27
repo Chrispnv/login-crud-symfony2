@@ -7,7 +7,13 @@
 - [Symfony2 - API Reference](http://api.symfony.com/2.6/index.html)
 - [Symfony2 - Installation & configuration](http://symfony.com/fr/doc/current/book/installation.html)
 - [Symfony2 - Les fondamentaux de Symfony2 et HTTP](http://symfony.com/fr/doc/current/book/http_fundamentals.html)  
------------------------
+
+**Fonctionnalités**
 - [Symfony2 - La sécurité](http://symfony.com/fr/doc/current/book/security.html)
 - [Symfony2 - Service container](http://symfony.com/fr/doc/current/book/service_container.html)
-- [Symfony2 - Gestion session](http://symfony.com/fr/doc/current/components/http_foundation/sessions.html) 
+- [Symfony2 - Gestion session](http://symfony.com/fr/doc/current/components/http_foundation/sessions.html)
+
+  **Formulaires**
+- [Symfony2 - Les formulaires & types de champs](http://symfony.com/fr/doc/current/book/forms.html)
+- [La ferme du web - Les formulaires & types de champs](http://www.lafermeduweb.net/tutorial/les-formulaires-dans-symfony2-p100.html)
+- [Symfony2 - Gestion session](http://symfony.com/fr/doc/current/components/http_foundation/sessions.html)
