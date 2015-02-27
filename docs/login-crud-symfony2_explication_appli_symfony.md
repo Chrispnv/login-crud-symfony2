@@ -22,30 +22,17 @@ L'application a été créée depuis une bdd existante et les *annotations* ont 
 
 Suivre la doc d'installation suivante : [Installation Symfony2](http://symfony.com/fr/doc/current/book/installation.html "Titre")
 
-- Créer un nouveau répertoire (ex : dans `/home/usercourant`).
+- Créer un nouveau projet (= application Symfony. Ex : dans `/home/usercourant`). Un répertoire `applisymf` va être créé contenant toute la structure Symfony pour l'application.
 
     ```
-    $ mkdir applisymf
-    ```
-
-- 
-
-- Changer le propriétaire de ce nouveau répertoire. Mettre le user web comme nouveau propriétaire.
-  - Pour trouver le user web.
-
-    ```
-    $ ps aux | grep httpd ou ps aux | grep apache
+    $ symfony new applisymf
     ```
     
-```
-$ chown -R userweb:userweb repappli
-```
-
 - Rendre lisible l'appli sur internet : 2 solutions.
     - Soit créer un lien symbolique vers le répertoire web de l'appli à la racine web d'Apache.
     
         ```
-        $ ln -s /cheminrepappli/repappli/web /cheminracineweb/nomliensymbo
+        $ ln -s /home/usercourant/applisymf/web /cheminracineweb/nomappli
         ``` 
 
     - Soit ajouter le virtualHost de l'appli dans la conf Apache.
@@ -53,8 +40,8 @@ $ chown -R userweb:userweb repappli
         ```
         <VirtualHost *:80>
             ServerName nomappli.com
-            DocumentRoot /cheminrepappli/repappli/web
-            <Directory "/cheminrepappli/repappli/web">
+            DocumentRoot /cheminrepappli/applisymf/web
+            <Directory "/cheminrepappli/applisymf/web">
                 DirectoryIndex app.php
                 Options -Indexes FollowSymLinks SymLinksifOwnerMatch
                 AllowOverride All
@@ -62,6 +49,28 @@ $ chown -R userweb:userweb repappli
             </Directory>
         </VirtualHost>
         ```
+
+- Tester l'accès à l'application dans un navigateur. Il y a une notion de PROD et de DEV (debug) dans Symfony.
+
+Pour une question de sécurité, l'application en DEV est testable comme suit :
+
+    ```http://127.0.0.1/nomappli/app_dev.php```
+
+`app_dev.php` permet d'afficher dans le navigateur toutes les fonctionnalités de débugage de Symfony.
+
+`app_dev.php` ne peut pas être tester par défaut en dehors de 127.0.0.1. Pour y accéder en dehors de 127.0.0.1, il faut commenter les lignes suivantes ou changer 127.0.0.1 par une autre IP dans le fichier `web/app_dev.php`
+
+```
+if (isset($_SERVER['HTTP_CLIENT_IP'])
+    || isset($_SERVER['HTTP_X_FORWARDED_FOR'])
+    || !(in_array(@$_SERVER['REMOTE_ADDR'], array('127.0.0.1', 'fe80::1', '::1')) || php_sapi_name() === 'cli-server')
+) {
+    header('HTTP/1.0 403 Forbidden');
+    exit('You are not allowed to access this file. Check '.basename(__FILE__).' for more information.');
+}
+```
+
+- Tester l'adresse `http://ipserveurweb/nomappli/app.php`, vous devez voir un champ Login, un champ Mot de passe et un bouton Login.
 
 - Changer les droits sur `cache` et `logs` de l'appli depuis `/home/repuser/repappli`
 
