@@ -121,9 +121,13 @@ $ php app/console generate:bundle
 Dans la structure Symfony de l'application, 2 répertoires vont être créés. Le répertoire du module contient une structure Symfony pour la suite du développement de l'application.  
 `/home/usercourant/applisymf/src/Nomvendor/NommoduleBundle` (ex : src/Pnv/SaisieBundle)
 
-- Créer le mapping (sorte de métadonnées) entre les futures entités (tables sous forme de classe) et les tables de la bdd.  
-Le chemin Nomvendor/NommoduleBundle est raccourci en `VendorNommoduleBundle`
+- Créer le mapping (sorte de métadonnées) entre les futures entités (tables bdd sous forme de classe) et les tables de la bdd.  
+Le chemin Nomvendor/NommoduleBundle est raccourci en `VendorNommoduleBundle`.  
+`annotation` spécifie que ces métadonnées seront dans les commentaires en en-tête des classes et des méthodes des entités qui vont être créées.
 
 ```
 $ php app/console doctrine:mapping:import --force VendorNommoduleBundle annotation
 ```
+
+- créer les entités (tables bdd sous forme de classe) du module  
+Une seule entité peut être créer ([Symfony2 Entity](http://symfony.com/fr/doc/current/bundles/SensioGeneratorBundle/commands/generate_doctrine_entity.html)) ou toutes celles correspondant au modèle de données
