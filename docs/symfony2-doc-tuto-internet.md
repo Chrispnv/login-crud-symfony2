@@ -12,9 +12,6 @@
 - [Symblog - Création blog](http://keiruaprod.fr/symblog-fr/)
 
 **Fonctionnalités**
-- [Symfony2 - La sécurité](http://symfony.com/fr/doc/current/book/security.html)
-- [Symfony2 - Service container](http://symfony.com/fr/doc/current/book/service_container.html)
-- [Symfony2 - Gestion session](http://symfony.com/fr/doc/current/components/http_foundation/sessions.html)
 
 **Formulaires**
 - [Symfony2 - Les formulaires & types de champs](http://symfony.com/fr/doc/current/book/forms.html)
@@ -24,8 +21,17 @@
 
 **Entités**
 - [Symfony2 cookbook - Entité](http://symfony.com/fr/doc/current/cookbook/doctrine/reverse_engineering.html)
-- [DevNoteBook - Entity Manager](http://devnotebook.fr/index.php/Informatique/Web/PHP/Symfony/L-EntityManager-de-Doctrine-pour-Symfony)
+- [DevNoteBook - Entity Manager](http://devnotebook.fr/index.php/Informatique/Web/PHP/Symfony/L-EntityManager-de-Doctrine-pour-Symfony)  
 **CRUD**
 - [Symfony2 cookbook - CRUD](http://symfony.com/fr/doc/current/bundles/SensioGeneratorBundle/commands/generate_doctrine_crud.html)
 - [Digital Ocean - CRUD 1](https://www.digitalocean.com/community/tutorials/how-to-use-symfony2-to-perform-crud-operations-on-a-vps-part-1)
-- [Digital Ocean - CRUD 2](https://www.digitalocean.com/community/tutorials/how-to-use-symfony2-to-perform-crud-operations-on-a-vps-part-2)
+- [Digital Ocean - CRUD 2](https://www.digitalocean.com/community/tutorials/how-to-use-symfony2-to-perform-crud-operations-on-a-vps-part-2)  
+
+**Divers**
+- [Symfony2 - La sécurité](http://symfony.com/fr/doc/current/book/security.html)
+- [Symfony2 - Service container](http://symfony.com/fr/doc/current/book/service_container.html)
+- [Symfony2 - Gestion session](http://symfony.com/fr/doc/current/components/http_foundation/sessions.html)
+- [Symfony2 - Gestion session](http://symfony.com/fr/doc/current/components/http_foundation/sessions.html)
+- [Symfony2 - Gestion session](http://symfony.com/fr/doc/current/components/http_foundation/sessions.html)
+- [Symfony2 - Gestion session](http://symfony.com/fr/doc/current/components/http_foundation/sessions.html)
+- 
