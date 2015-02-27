@@ -16,13 +16,13 @@
 - [Symfony2 - Service container](http://symfony.com/fr/doc/current/book/service_container.html)
 - [Symfony2 - Gestion session](http://symfony.com/fr/doc/current/components/http_foundation/sessions.html)
 
-     **Formulaires**
+**Formulaires**
 - [Symfony2 - Les formulaires & types de champs](http://symfony.com/fr/doc/current/book/forms.html)
 - [La ferme du web - Les formulaires & types de champs](http://www.lafermeduweb.net/tutorial/les-formulaires-dans-symfony2-p100.html)
 - [AFSY - Les formulaires & data binding](http://afsy.fr/avent/2013/22-formulaires-Symfony2-et-data-binding)
 - [Openclassrooms - Formulaires dynamiques](http://openclassrooms.com/forum/sujet/symfony-formulaire-dynamique-cadeau)
 
-     **Entités**
+**Entités**
 - [Symfony2 cookbook - Entité](http://symfony.com/fr/doc/current/cookbook/doctrine/reverse_engineering.html)
 - [DevNoteBook - Entity Manager](http://devnotebook.fr/index.php/Informatique/Web/PHP/Symfony/L-EntityManager-de-Doctrine-pour-Symfony)
 - [Symfony2 - Gestion session](http://symfony.com/fr/doc/current/components/http_foundation/sessions.html)
