@@ -54,7 +54,7 @@ Suivre la doc d'installation suivante : [Installation Symfony2](http://symfony.c
 
 Pour une question de sécurité, l'application en DEV est testable comme suit :
 
-    ```http://127.0.0.1/nomappli/app_dev.php```
+    `http://127.0.0.1/nomappli/app_dev.php`
 
 `app_dev.php` permet d'afficher dans le navigateur toutes les fonctionnalités de débugage de Symfony.
 
@@ -70,15 +70,17 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
 }
 ```
 
-- Tester l'adresse `http://ipserveurweb/nomappli/app.php`, vous devez voir un champ Login, un champ Mot de passe et un bouton Login.
-
-- Changer les droits sur `cache` et `logs` de l'appli depuis `/home/repuser/repappli`
+Le premier accès à l'application crée des des fichiers de log et dans le cache sur lesquels les droits d'accès doivent être changer. L'interface d'accueil demande d'ailleurs cela. Donc pour ce depuis depuis `/home/usercourant/applisymf` :
 
 ```
 $ chmod -R 777 app/cache app/logs
 ```
 
-- Configurer la BDD dans l'appli. Editer le fichier `/home/repuser/repappli/app/config/parameters.yml` et modifier les paramètres.
+Relancer dans le navigateur. Tout devrait être bon.
+
+`http://127.0.0.1/nomappli/app.php` ou `http://autreip/nomappli/app.php` renvoie sur une page en PROD fonctionnelle mais vide (sans fonctionnalités de bebugage).
+
+- Configurer la BDD dans l'appli. Editer le fichier `/home/usercourant/applisymf/app/config/parameters.yml` et modifier les paramètres.
 
 ```
 parameters:
@@ -96,4 +98,4 @@ parameters:
     secret: 5a1c9e6070c7a76af25a9e6ec63a1fbea74b7382
 ```
 
-- Tester l'adresse `http://ipserveurweb/nomappli/app-dev.php/activite`, vous devez voir un champ Login, un champ Mot de passe et un bouton Login.
+- Tester l'adresse `http://ipserveurweb/nomappli/app_dev.php/config.php`. Le message suivante doit apparaitre : Your configuration looks good to run Symfony.
