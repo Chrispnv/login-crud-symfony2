@@ -146,11 +146,16 @@ Si votre application contient des formulaires :
 
 Le modèle VMC du framework Symfony2 se comprend bien à la compréhension des répertoires et des classes de la structure d'une application.
 
-- `/home/usercourant/applisymf/app` = contient principalement de la config et des classes de haut niveau.
-- `/home/usercourant/applisymf/web` = sert de racine web du projet. Contient tout le javascript.
+- `/home/usercourant/applisymf/app` = contient principalement de la config (routing.yml, scurity.yml...) et des classes de haut niveau.
+- `/home/usercourant/applisymf/web` = sert de racine web du projet (point d'entrée de l'application). Contient tout le javascript.
 - `/home/usercourant/applisymf/src` = contient les vendor et les modules.
 - `/home/usercourant/applisymf/src/Vendor/NommoduleBundle` = contient toutes les fonctionnalité déclinées coté serveur et coté client. Les modules sont structurés sur le modèle VMC comme suit :
     - `Controller` = fait le lien entre la bdd et le coté client (view).
     - `Entity`, `Manager`, `Repository` = modélisation en entités (classes php) des tables de la bdd, méthodes d'accès à la bdd. tout cela permet de factoriser, de hiérarchiser les fonctions.
     - `Resources/view` = coté client avec les vues, les templates, la liaison avec le javascript...
     - `Form` = gestion des formulaires dans l'application.
+    - `Resources/config` = contient des services Symfony et du routing lié au module.
+
+Pour comprendre de façon précise [le déroulement d'une application Symfony2](http://symfony.com/fr/doc/current/book/http_fundamentals.html)
+
+Pour aller plus loin le site de Symfony, son [book et ses coobook](http://symfony.com/doc/current/index.html) sont intéressant.
