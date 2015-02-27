@@ -160,4 +160,4 @@ Pour comprendre de façon précise [le déroulement d'une application Symfony2](
 
 Pour aller plus loin le site de Symfony, son [book et ses coobook](http://symfony.com/doc/current/index.html) sont intéressant.
 
-Il y a aussi le fichier [symfony2-doc-tuto-internet.md](https://github.com/Chrispnv/login-crud-symfony2/blob/master/docs/symfony2-doc-tuto-internet.md) dans /docs contenant utiles ou moins utiles sur Symfony2.
+Il y a aussi le fichier [symfony2-doc-tuto-internet.md](https://github.com/Chrispnv/login-crud-symfony2/blob/master/docs/symfony2-doc-tuto-internet.md) dans `/docs` contenant des liens utiles sur Symfony2.
