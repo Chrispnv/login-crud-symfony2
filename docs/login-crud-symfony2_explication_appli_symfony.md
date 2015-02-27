@@ -102,13 +102,16 @@ parameters:
 
 - Créer un module (bundle) dans l'application. Une application Symfony est constituée de modules qui sont des fonctionnalités importantes dans l'application (ex : module authentification + module avec un formulaire). Ils peuvent être indépendants et factorisables pour d'autres applications.
 
-Voir 
+Voir les tutoriels suivants :   
 [Symfony2 bundles](http://symfony.com/doc/bundles/) / 
 [Symfony2 cookbook bundles](http://symfony.com/fr/doc/current/cookbook/bundles/best_practices.html) / 
 [Ferme du web bundles](http://www.lafermeduweb.net/tutorial/symfony2-les-bundles-et-la-structure-des-fichiers-p91.html)
 
 Le module est lui-même attaché à une entité supérieure (vendor) qui peut contenir plusieurs modules.  
-Cela donne : application > vendor > bundle
+Cela donne : `application > vendor > bundle`  
+Attention de bien respecter les règles de nommage et la casse lors de la création.  
+C'est à ce moment que le choix de la représentation de la configuration se fait : yml, xml ou annotation.  
+Ici, j'ai fait le choix des annotations.
 
 ```
 $ php app/console generate:bundle
