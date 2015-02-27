@@ -4,10 +4,7 @@ Selon les besoins, il existe plusieurs façon de créer une application, notamme
 
 L'application a été créée depuis une bdd existante et les *annotations* ont été utilisées pour le workflow entre les pages et pour la relation avec la bdd. Ces fonctionnalités sont soient gérées avec des fichiers yml ou xml ou avec des annotations (balises @) qui sont directement dans des tags commentaires en en-tête de classe ou de méthodes.
 
-### INSTALLATION DE LA BDD
 
-- Créer une BDD dans votre environnement de BDD. Si le propriétaire est autre que postgres, l'utiliser dans la config de l'appli par la suite.
-- Récupérer et exécuter le code SQL dans le fichier /sql/create_tables.sql qui est sur le dépôt.
 
 ### INSTALLATION DE L'APPLICATION
 
