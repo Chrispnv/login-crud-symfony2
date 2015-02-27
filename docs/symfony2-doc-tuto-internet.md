@@ -24,7 +24,7 @@
 **Entités**
 - [Symfony2 cookbook - Entité](http://symfony.com/fr/doc/current/cookbook/doctrine/reverse_engineering.html)
 - [DevNoteBook - Entity Manager](http://devnotebook.fr/index.php/Informatique/Web/PHP/Symfony/L-EntityManager-de-Doctrine-pour-Symfony)
-- 
+
 **CRUD**
 - [Symfony2 cookbook - CRUD](http://symfony.com/fr/doc/current/bundles/SensioGeneratorBundle/commands/generate_doctrine_crud.html)
 - [Digital Ocean - CRUD 1](https://www.digitalocean.com/community/tutorials/how-to-use-symfony2-to-perform-crud-operations-on-a-vps-part-1)
