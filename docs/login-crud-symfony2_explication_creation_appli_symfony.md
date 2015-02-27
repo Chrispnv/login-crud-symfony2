@@ -159,3 +159,5 @@ Le modèle VMC du framework Symfony2 se comprend bien à la compréhension des r
 Pour comprendre de façon précise [le déroulement d'une application Symfony2](http://symfony.com/fr/doc/current/book/http_fundamentals.html)
 
 Pour aller plus loin le site de Symfony, son [book et ses coobook](http://symfony.com/doc/current/index.html) sont intéressant.
+
+Il y a aussi le fichier [symfony2_doc_tuto_internet.md]() dans /docs contenant utiles ou moins utiles sur Symfony2.
