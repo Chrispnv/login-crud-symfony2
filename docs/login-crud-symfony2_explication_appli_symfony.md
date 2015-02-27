@@ -130,4 +130,12 @@ $ php app/console doctrine:mapping:import --force VendorNommoduleBundle annotati
 ```
 
 - créer les entités (tables bdd sous forme de classe) du module  
-Une seule entité peut être créer ([Symfony2 Entity](http://symfony.com/fr/doc/current/bundles/SensioGeneratorBundle/commands/generate_doctrine_entity.html)) ou toutes celles correspondant au modèle de données
+Une seule entité peut être créer ([Symfony2 Entity](http://symfony.com/fr/doc/current/bundles/SensioGeneratorBundle/commands/generate_doctrine_entity.html)) ou toutes celles correspondant au modèle de données.  
+La commande suivante génèrent toutes les entités du modèle de données.
+
+```
+$ php app/console doctrine:generate:entities PnvSaisieBundle
+```
+
+Voilà l'application Symfony est prête pour le développement des fonctionnalités attendues.  
+Si votre application contient des formulaires, des commandes Symfony permettent de générer un workflow CRUD (Ajout/Modification/suppression/affichage)
