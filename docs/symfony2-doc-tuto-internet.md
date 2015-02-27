@@ -1,6 +1,6 @@
 ### Liens sur Symfony2
 
-####Généralités
+######Généralités
 - [Symfony2 - Site](http://symfony.com/)
 - [Symfony2 - Book](http://symfony.com/doc/current/book/index.html)
 - [Symfony2 - Cookbook](http://symfony.com/doc/current/cookbook/index.html)
