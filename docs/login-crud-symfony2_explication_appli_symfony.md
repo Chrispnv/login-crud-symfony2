@@ -54,7 +54,7 @@ Suivre la doc d'installation suivante : [Installation Symfony2](http://symfony.c
 
 Pour une question de sécurité, l'application en DEV est testable comme suit :
 
-    `http://127.0.0.1/nomappli/app_dev.php`
+`http://127.0.0.1/nomappli/app_dev.php`
 
 `app_dev.php` permet d'afficher dans le navigateur toutes les fonctionnalités de débugage de Symfony.
 
@@ -99,3 +99,10 @@ parameters:
 ```
 
 - Tester l'adresse `http://ipserveurweb/nomappli/app_dev.php/config.php`. Le message suivante doit apparaitre : Your configuration looks good to run Symfony.
+
+- Créer un module dans l'application. Une application Symfony est constituée de modules qui sont des fonctionnalités importantes dans l'application (ex : module authentification + module avec un formulaire). Ils peuvent être indépendants et factorisables pour d'autres applications.
+
+Voir 
+[Symfony2 bundles](http://symfony.com/doc/bundles/)
+[Symfony2 cookbook bundles](http://symfony.com/fr/doc/current/cookbook/bundles/best_practices.html)
+[Ferme du web bundles](http://www.lafermeduweb.net/tutorial/symfony2-les-bundles-et-la-structure-des-fichiers-p91.html)
