@@ -103,7 +103,7 @@ parameters:
 - Créer un module (bundle) dans l'application. Une application Symfony est constituée de modules qui sont des fonctionnalités importantes dans l'application (ex : module authentification + module avec un formulaire). Ils peuvent être indépendants et factorisables pour d'autres applications.
 
 Voir les tutoriels suivants :   
-[Symfony2 bundles](http://symfony.com/doc/bundles/) / 
+[Symfony2 bundles](http://symfony.com/doc/current/bundles/SensioGeneratorBundle/commands/generate_bundle.html) / 
 [Symfony2 cookbook bundles](http://symfony.com/fr/doc/current/cookbook/bundles/best_practices.html) / 
 [Ferme du web bundles](http://www.lafermeduweb.net/tutorial/symfony2-les-bundles-et-la-structure-des-fichiers-p91.html)
 
@@ -111,8 +111,19 @@ Le module est lui-même attaché à une entité supérieure (vendor) qui peut co
 Cela donne : `application > vendor > bundle`  
 Attention de bien respecter les règles de nommage et la casse lors de la création.  
 C'est à ce moment que le choix de la représentation de la configuration se fait : yml, xml ou annotation.  
-Ici, j'ai fait le choix des annotations.
+Ici, j'ai fait le choix des annotations.  
+La commande suivante lance la génération du module avec intéraction afin de saisir les paramètres du module.
 
 ```
 $ php app/console generate:bundle
+```
+
+Dans la structure Symfony de l'application, 2 répertoires vont être créés. Le répertoire du module contient une structure Symfony pour la suite du développement de l'application.  
+`/home/usercourant/applisymf/src/Nomvendor/NommoduleBundle` (ex : src/Pnv/SaisieBundle)
+
+- Créer le mapping (sorte de métadonnées) entre les futures entités (tables sous forme de classe) et les tables de la bdd.  
+Le chemin Nomvendor/NommoduleBundle est raccourci en `VendorNommoduleBundle`
+
+```
+$ php app/console doctrine:mapping:import --force VendorNommoduleBundle annotation
 ```
