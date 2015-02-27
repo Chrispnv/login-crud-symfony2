@@ -100,9 +100,16 @@ parameters:
 
 - Tester l'adresse `http://ipserveurweb/nomappli/app_dev.php/config.php`. Le message suivante doit apparaitre : Your configuration looks good to run Symfony.
 
-- Créer un module dans l'application. Une application Symfony est constituée de modules qui sont des fonctionnalités importantes dans l'application (ex : module authentification + module avec un formulaire). Ils peuvent être indépendants et factorisables pour d'autres applications.
+- Créer un module (bundle) dans l'application. Une application Symfony est constituée de modules qui sont des fonctionnalités importantes dans l'application (ex : module authentification + module avec un formulaire). Ils peuvent être indépendants et factorisables pour d'autres applications.
 
 Voir 
-[Symfony2 bundles](http://symfony.com/doc/bundles/)
-[Symfony2 cookbook bundles](http://symfony.com/fr/doc/current/cookbook/bundles/best_practices.html)
+[Symfony2 bundles](http://symfony.com/doc/bundles/) / 
+[Symfony2 cookbook bundles](http://symfony.com/fr/doc/current/cookbook/bundles/best_practices.html) / 
 [Ferme du web bundles](http://www.lafermeduweb.net/tutorial/symfony2-les-bundles-et-la-structure-des-fichiers-p91.html)
+
+Le module est lui-même attaché à une entité supérieure (vendor) qui peut contenir plusieurs modules.  
+Cela donne : application > vendor > bundle
+
+```
+$ php app/console generate:bundle
+```
