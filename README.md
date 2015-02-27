@@ -9,7 +9,7 @@ Elle permet juste de tester et comprendre les fonctionnalités suivantes :
  * Le routing dans Symfony ;
  * La relation entre une entité Symfony et sa table en BDD (caractéristiques champs, jointures ...)
 
-Sont disponibles dans le répertoire /docs :
+Sont disponibles dans le répertoire `/docs` :
  * Un guide d'installation et de configuration de login-crud-symfony2 ;
  * Un fichier expliquant le fonctionnement de l'application et l'environnement Symfony ;
  * Un fichier contenant des liens internet servant à la bonne compréhension de Symfony2 et de son environnement. 
