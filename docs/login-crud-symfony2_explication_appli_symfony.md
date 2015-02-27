@@ -1,12 +1,12 @@
-## CREATION DE L'APPLICATION
+### INTRODUCTION
 
 Selon les besoins, il existe plusieurs façon de créer une application, notamment si la bdd est existante ou pas. Donc, cette doc décrit seulement la manière dont a até créée cette application.
 
 L'application a été créée depuis une bdd existante et les *annotations* ont été utilisées pour le workflow entre les pages et pour la relation avec la bdd. Ces fonctionnalités sont soient gérées avec des fichiers yml ou xml ou avec des annotations (balises @) qui sont directement dans des tags commentaires en en-tête de classe ou de méthodes.
 
+**IMPORTANT : les tables utilisées dans l'application Symfony doivent se trouver dans le schéma public de la bdd (je n'ai pas trouvé comment utilisé un autre schéma).**
 
-
-### INSTALLATION DE L'APPLICATION
+### CREATION DE L'APPLICATION
 
 - Info : 
     - Cette doc est valable pour une installation et une configuration sur Linux (Ubuntu).
@@ -17,8 +17,18 @@ L'application a été créée depuis une bdd existante et les *annotations* ont 
         $ adduser usercourant sudo
         $ exit
         ```
-    
-- Récupérer avec Git ou d'une autre façon le dépôt de l'application dans un répertoire prélablement créé (mkdir ...).  Pour mon cas, ce répertoire contenant l'appli se trouve dans le répertoire du user linux courant `(/home/repuser)`.
+
+- Installer et configurer Symfony2
+
+Suivre la doc d'installation suivante : [Installation Symfony2](http://symfony.com/fr/doc/current/book/installation.html "Titre")
+
+- Créer un nouveau répertoire (ex : dans `/home/usercourant`).
+
+    ```
+    $ mkdir applisymf
+    ```
+
+- 
 
 - Changer le propriétaire de ce nouveau répertoire. Mettre le user web comme nouveau propriétaire.
   - Pour trouver le user web.
