@@ -138,4 +138,19 @@ $ php app/console doctrine:generate:entities PnvSaisieBundle
 ```
 
 Voilà l'application Symfony est prête pour le développement des fonctionnalités attendues.  
-Si votre application contient des formulaires, des commandes Symfony permettent de générer un workflow CRUD (Ajout/Modification/suppression/affichage)
+Si votre application contient des formulaires : 
+- des commandes Symfony permettent de générer un workflow CRUD (Ajout/Modification/suppression/affichage) : [Symfony2 CRUD](http://symfony.com/fr/doc/current/bundles/SensioGeneratorBundle/commands/generate_doctrine_crud.html)
+- Sinon je trouve que de les construire manuellement est plus formateur : [La ferme du web - Formulaire](http://www.lafermeduweb.net/tutorial/les-formulaires-dans-symfony2-p100.html)
+
+### PETITE DESCRIPTION DE LA STRUCTURE SYMFONY
+
+Le modèle VMC du framework Symfony2 se comprend bien à la compréhension des répertoires et des classes de la structure d'une application.
+
+- `/home/usercourant/applisymf/app` = contient principalement de la config et des classes de haut niveau.
+- `/home/usercourant/applisymf/web` = sert de racine web du projet. Contient tout le javascript.
+- `/home/usercourant/applisymf/src` = contient les vendor et les modules.
+- `/home/usercourant/applisymf/src/Vendor/NommoduleBundle` = contient toutes les fonctionnalité déclinées coté serveur et coté client. Les modules sont structurés sur le modèle VMC comme suit :
+    - `Controller` = fait le lien entre la bdd et le coté client (view).
+    - `Entity`, `Manager`, `Repository` = modélisation en entités (classes php) des tables de la bdd, méthodes d'accès à la bdd. tout cela permet de factoriser, de hiérarchiser les fonctions.
+    - `Resources/view` = coté client avec les vues, les templates, la liaison avec le javascript...
+    - `Form` = gestion des formulaires dans l'application.
