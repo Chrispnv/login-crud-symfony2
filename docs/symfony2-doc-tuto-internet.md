@@ -13,9 +13,9 @@
 - [Jobeet](http://jobeet.thuau.fr/)
 - [Symblog - Création blog](http://keiruaprod.fr/symblog-fr/)
 
-**Fonctionnalités**
+**2. Fonctionnalités**
 
-    + **Formulaires**
+**Formulaires**
 - [Symfony2 - Les formulaires & types de champs](http://symfony.com/fr/doc/current/book/forms.html)
 - [La ferme du web - Les formulaires & types de champs](http://www.lafermeduweb.net/tutorial/les-formulaires-dans-symfony2-p100.html)
 - [AFSY - Les formulaires & data binding](http://afsy.fr/avent/2013/22-formulaires-Symfony2-et-data-binding)
@@ -23,7 +23,8 @@
 
 **Entités**
 - [Symfony2 cookbook - Entité](http://symfony.com/fr/doc/current/cookbook/doctrine/reverse_engineering.html)
-- [DevNoteBook - Entity Manager](http://devnotebook.fr/index.php/Informatique/Web/PHP/Symfony/L-EntityManager-de-Doctrine-pour-Symfony)  
+- [DevNoteBook - Entity Manager](http://devnotebook.fr/index.php/Informatique/Web/PHP/Symfony/L-EntityManager-de-Doctrine-pour-Symfony)
+- 
 **CRUD**
 - [Symfony2 cookbook - CRUD](http://symfony.com/fr/doc/current/bundles/SensioGeneratorBundle/commands/generate_doctrine_crud.html)
 - [Digital Ocean - CRUD 1](https://www.digitalocean.com/community/tutorials/how-to-use-symfony2-to-perform-crud-operations-on-a-vps-part-1)
