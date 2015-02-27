@@ -1,7 +1,7 @@
 ### Liens sur Symfony2
 
 **Généralités**
-- [Symfony2 - Site](http://symfony.com/)
+\- [Symfony2 - Site](http://symfony.com/)
 - [Symfony2 - Book](http://symfony.com/doc/current/book/index.html)
 - [Symfony2 - Cookbook](http://symfony.com/doc/current/cookbook/index.html)
 - [Symfony2 - API Reference](http://api.symfony.com/2.6/index.html)
@@ -43,7 +43,7 @@
 - [Symfony2 - Gestion session](http://symfony.com/fr/doc/current/components/http_foundation/sessions.html)
 - [Symfony2 - Twig Reference](http://symfony.com/fr/doc/current/reference/forms/twig_reference.html)
 
-###Liens sur ORM DOCTRINE 2
+###Liens sur ORM Doctrine 2
 - [Doctrine 2 - API reference](https://github.com/doctrine/doctrine2/tree/master/lib/Doctrine/ORM)
 - [Doctrine 2 - Documentation](http://doctrine-orm.readthedocs.org/en/latest/index.html)
 - [Doctrine 2 - Mapping](http://doctrine-orm.readthedocs.org/en/latest/reference/association-mapping.html)
