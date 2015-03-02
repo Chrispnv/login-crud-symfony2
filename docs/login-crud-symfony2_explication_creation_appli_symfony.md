@@ -1,13 +1,13 @@
-### INTRODUCTION
-
+INTRODUCTION
+------------
 Selon les besoins, il existe plusieurs façon de créer une application, notamment si la bdd est existante ou pas. Donc, cette doc décrit seulement la manière dont a até créée cette application.
 
 L'application a été créée depuis une bdd existante et les *annotations* ont été utilisées pour le workflow entre les pages et pour la relation avec la bdd. Ces fonctionnalités sont soient gérées avec des fichiers yml ou xml ou avec des annotations (balises @) qui sont directement dans des tags commentaires en en-tête de classe ou de méthodes.
 
 **IMPORTANT : les tables utilisées dans l'application Symfony doivent se trouver dans le schéma public de la bdd (je n'ai pas trouvé comment utilisé un autre schéma).**
 
-### CREATION DE L'APPLICATION
-
+CREATION DE L'APPLICATION
+-------------------------
 - Info : 
     - Cette doc est valable pour une installation et une configuration sur Linux (Ubuntu).
     - Les commandes Linux suivantes demandent pour certaines d'être lancées avec sudo. Il faut au préalable que le user linux qui lance les commandes ait les droits ```sudo```
