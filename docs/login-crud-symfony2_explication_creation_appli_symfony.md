@@ -50,7 +50,7 @@ Suivre la doc d'installation suivante : [Installation Symfony2](http://symfony.c
         </VirtualHost>
         ```
 
-- Tester l'accès à l'application dans un navigateur. Il y a une notion de PROD et de DEV (debug) dans Symfony.
+- <a id="ancre1"></a>Tester l'accès à l'application dans un navigateur. Il y a une notion de PROD et de DEV (debug) dans Symfony.
 
 Pour une question de sécurité, l'application en DEV est testable comme suit :
 
