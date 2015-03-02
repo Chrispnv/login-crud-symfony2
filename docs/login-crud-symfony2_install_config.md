@@ -5,8 +5,8 @@ INSTALLATION DE LA BDD
 
 **IMPORTANT : les tables doivent se trouver dans le schéma public de la bdd (je n'ai pas trouvé comment utilisé un autre schéma).**
 
-### INSTALLATION DE L'APPLICATION
-
+INSTALLATION DE L'APPLICATION
+------------------------------------------
 - Info : 
     - Cette doc est valable pour une installation et une configuration sur Linux (Ubuntu).
     - Les commandes Linux suivantes demandent pour certaines d'être lancées avec sudo. Il faut au préalable que le user linux qui lance les commandes ait les droits ```sudo```
