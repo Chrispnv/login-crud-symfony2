@@ -85,7 +85,7 @@ parameters:
 
     Le logout n'a pas été mis en place.
     
-Pour comprendre comment l'application fonctionne suivre la doc `login-crud-symfony2_explication_appli.md`
+Pour comprendre comment l'application fonctionne suivre la doc [login-crud-symfony2_explication_appli.md](https://github.com/Chrispnv/login-crud-symfony2/blob/master/docs/login-crud-symfony2_explication_creation_appli_symfony.md)
 
 Voilà. Bon test.
 
