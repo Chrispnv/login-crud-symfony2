@@ -1,6 +1,6 @@
 INTRODUCTION
 ------------
-Selon les besoins, il existe plusieurs façon de créer une application, notamment si la bdd est existante ou pas. Donc, cette doc décrit seulement la manière dont a até créée cette application.
+Selon les besoins, il existe plusieurs façon de créer une application, notamment si la bdd est existante ou pas. Donc, cette doc décrit seulement la manière dont a été créée cette application.
 
 L'application a été créée depuis une bdd existante et les *annotations* ont été utilisées pour le workflow entre les pages et pour la relation avec la bdd. Ces fonctionnalités sont soient gérées avec des fichiers yml ou xml ou avec des annotations (balises @) qui sont directement dans des tags commentaires en en-tête de classe ou de méthodes.
 
@@ -70,7 +70,7 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
 }
 ```
 
-Le premier accès à l'application crée des des fichiers de log et dans le cache sur lesquels les droits d'accès doivent être changer. L'interface d'accueil demande d'ailleurs cela. Donc pour ce depuis depuis `/home/usercourant/applisymf` :
+Le premier accès à l'application crée des fichiers de log et dans le cache sur lesquels les droits d'accès doivent être changer. L'interface d'accueil demande d'ailleurs cela. Donc pour ce depuis `/home/usercourant/applisymf`
 
 ```
 $ chmod -R 777 app/cache app/logs
@@ -98,7 +98,7 @@ parameters:
     secret: 5a1c9e6070c7a76af25a9e6ec63a1fbea74b7382
 ```
 
-- Tester l'adresse `http://ipserveurweb/nomappli/app_dev.php/config.php`. Le message suivante doit apparaitre : Your configuration looks good to run Symfony.
+- Tester l'adresse `http://ipserveurweb/nomappli/app_dev.php/config.php`. Le message suivant doit apparaitre : Your configuration looks good to run Symfony.
 
 - Créer un module (bundle) dans l'application. Une application Symfony est constituée de modules qui sont des fonctionnalités importantes dans l'application (ex : module authentification + module avec un formulaire). Ils peuvent être indépendants et factorisables pour d'autres applications.
 
@@ -111,7 +111,7 @@ Le module est lui-même attaché à une entité supérieure (vendor) qui peut co
 Cela donne : `application > vendor > bundle`  
 Attention de bien respecter les règles de nommage et la casse lors de la création.  
 C'est à ce moment que le choix de la représentation de la configuration se fait : yml, xml ou annotation.  
-Ici, j'ai fait le choix des annotations.  
+Ici, j'ai fait le choix des **annotations**.  
 La commande suivante lance la génération du module avec intéraction afin de saisir les paramètres du module.
 
 ```
@@ -142,12 +142,12 @@ Si votre application contient des formulaires :
 - des commandes Symfony permettent de générer un workflow CRUD (Ajout/Modification/suppression/affichage) : [Symfony2 CRUD](http://symfony.com/fr/doc/current/bundles/SensioGeneratorBundle/commands/generate_doctrine_crud.html)
 - Sinon je trouve que de les construire manuellement est plus formateur : [La ferme du web - Formulaire](http://www.lafermeduweb.net/tutorial/les-formulaires-dans-symfony2-p100.html)
 
-### PETITE DESCRIPTION DE LA STRUCTURE SYMFONY
-
-Le modèle VMC du framework Symfony2 se comprend bien à la compréhension des répertoires et des classes de la structure d'une application.
+PETITE DESCRIPTION DE LA STRUCTURE SYMFONY
+------------------------------------------
+Le modèle VMC du framework Symfony2 se comprend bien à la lecture des répertoires et des classes de la structure d'une application.
 
 - `/home/usercourant/applisymf/app` = contient principalement de la config (routing.yml, scurity.yml...) et des classes de haut niveau.
-- `/home/usercourant/applisymf/web` = sert de racine web du projet (point d'entrée de l'application). Contient tout le javascript.
+- `/home/usercourant/applisymf/web` = sert de racine web du projet (point d'entrée de l'application). Contient tout le javascript, css...
 - `/home/usercourant/applisymf/src` = contient les vendor et les modules.
 - `/home/usercourant/applisymf/src/Vendor/NommoduleBundle` = contient toutes les fonctionnalité déclinées coté serveur et coté client. Les modules sont structurés sur le modèle VMC comme suit :
     - `Controller` = fait le lien entre la bdd et le coté client (view).
@@ -158,6 +158,6 @@ Le modèle VMC du framework Symfony2 se comprend bien à la compréhension des r
 
 Pour comprendre de façon précise [le déroulement d'une application Symfony2](http://symfony.com/fr/doc/current/book/http_fundamentals.html)
 
-Pour aller plus loin le site de Symfony, son [book et ses coobook](http://symfony.com/doc/current/index.html) sont intéressant.
+Pour aller plus loin le site de Symfony, son [book et ses coobook](http://symfony.com/doc/current/index.html) sont intéressants.
 
-Il y a aussi le fichier [symfony2-doc-tuto-internet.md](https://github.com/Chrispnv/login-crud-symfony2/blob/master/docs/symfony2-doc-tuto-internet.md) dans `/docs` contenant des liens utiles sur Symfony2.
+Il y a aussi le fichier [symfony2-doc-tuto-internet.md](https://github.com/Chrispnv/login-crud-symfony2/blob/master/docs/symfony2-doc-tuto-internet.md) dans `/docs` contenant des liens utiles sur Symfony2 et autres.
