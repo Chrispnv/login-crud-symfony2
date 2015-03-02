@@ -77,7 +77,7 @@ parameters:
 ```
 
 - Tester l'adresse `http://ipserveurweb/nomappli/app_dev.php/activite`, vous devez voir un champ Login, un champ Mot de passe et un bouton Login.  
-Attention : pour des questions de sécurité, regarder [ceci](https://github.com/Chrispnv/login-crud-symfony2/blob/master/docs/login-crud-symfony2_explication_creation_appli_symfony.md#ancre1) pour l'accès en DEV de l'appli.
+Attention : pour des questions de sécurité, regarder [ceci](https://github.com/Chrispnv/login-crud-symfony2/blob/master/docs/login-crud-symfony2_explication_creation_appli_symfony.md#ancre1) pour l'accès en DEV de l'appli, car dans l'appli, le bloc pour la gestion des accès IP en DEV a été commenté dans /web/app_dev.php
 
     ```
     Login = admin
