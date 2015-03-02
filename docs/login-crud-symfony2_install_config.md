@@ -76,7 +76,8 @@ parameters:
     secret: 5a1c9e6070c7a76af25a9e6ec63a1fbea74b7382
 ```
 
-- Tester l'adresse `http://ipserveurweb/nomappli/app_dev.php/activite`, vous devez voir un champ Login, un champ Mot de passe et un bouton Login.
+- Tester l'adresse `http://ipserveurweb/nomappli/app_dev.php/activite`, vous devez voir un champ Login, un champ Mot de passe et un bouton Login.  
+Attention : pour des questions de sécurité, regarder [ceci](https://github.com/Chrispnv/login-crud-symfony2/blob/master/docs/login-crud-symfony2_explication_creation_appli_symfony.md#ancre1) pour l'accès en DEV de l'appli.
 
     ```
     Login = admin
