@@ -86,6 +86,8 @@ Attention : pour des questions de sécurité, regarder [ceci](https://github.com
 
     Le logout n'a pas été mis en place.
     
+Pour comprendre ce que font les fonctions et le code, j'ai ajouté des commentaires dans différents fichiers de l'application (php, yml, twig).
+
 Pour comprendre comment l'application fonctionne suivre la doc [login-crud-symfony2_explication_appli.md](https://github.com/Chrispnv/login-crud-symfony2/blob/master/docs/login-crud-symfony2_explication_creation_appli_symfony.md)
 
 Voilà. Bon test.
