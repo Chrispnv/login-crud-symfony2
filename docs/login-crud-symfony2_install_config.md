@@ -1,6 +1,6 @@
 INSTALLATION DE LA BDD
 ----------------------------
-- Créer une BDD dans votre environnement de BDD. Si le propriétaire est autre que postgres, l'utiliser dans la config de l'appli par la suite.
+- Créer une BDD dans votre environnement de BDD. Si le propriétaire est autre que postgres, l'utiliser dans la config de l'appli par la suite (app/config/parameters.yml).
 - Récupérer et exécuter le code SQL dans le fichier /sql/create_tables.sql qui est sur le dépôt.
 
 **IMPORTANT : les tables doivent se trouver dans le schéma public de la bdd (je n'ai pas trouvé comment utilisé un autre schéma).**
