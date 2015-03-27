@@ -98,7 +98,7 @@ parameters:
     secret: 5a1c9e6070c7a76af25a9e6ec63a1fbea74b7382
 ```
 
-- Tester l'adresse `http://ipserveurweb/nomappli/app_dev.php/config.php`. Le message suivant doit apparaitre : Your configuration looks good to run Symfony.
+- Tester l'adresse `http://ipserveurweb/nomappli/config.php`. Le message suivant doit apparaitre : Your configuration looks good to run Symfony.
 
 - Créer un module (bundle) dans l'application. Une application Symfony est constituée de modules qui sont des fonctionnalités importantes dans l'application (ex : module authentification + module avec un formulaire). Ils peuvent être indépendants et factorisables pour d'autres applications.
 
